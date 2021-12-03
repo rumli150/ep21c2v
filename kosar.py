@@ -11,7 +11,7 @@ class Kosar:
         """
         A kosár létrehozásakor beállítja az osztály attribútumait.
         """
-        pass
+        self.termekek = termekek
 
     def osszeg_lekerdezese(self) -> int:
         """

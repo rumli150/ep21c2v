@@ -1,4 +1,4 @@
-
+import kosar
 
 
 class Bolt:
@@ -18,7 +18,23 @@ class Bolt:
 
         :param filepath: A kosarak tartalmát tartalmazó fájl elérési útvonala.
         """
-        pass
+        try:
+            f = open(filepath, "r", encoding="UTF-8")
+
+            sor = f[0]
+            while sor !="F":
+
+
+            # for sor in f:
+            #     sor = sor.strip().split()
+            #     sor[0] = int(sor[0])
+            #     sor[1] = int(sor[1])
+            #     lista.append(sor)
+
+
+            f.close()
+        except FileNotFoundError:
+            print("Hiba!")
 
     def feladat_2(self) -> None:
         """
